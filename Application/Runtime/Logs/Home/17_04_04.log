@@ -1,0 +1,3 @@
+[ 2017-04-04T22:05:49+08:00 ] 127.0.0.1 /index.php/Home/User/regist
+ERR: Call to undefined function Home\Controller\sendMail()
+

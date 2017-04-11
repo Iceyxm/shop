@@ -1,0 +1,561 @@
+[ 2017-04-05T08:47:34+08:00 ] 127.0.0.1 /index.php/Home/index.index
+ERR: 无法加载控制器:Index.index
+
+[ 2017-04-05T17:31:29+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_attr` [ RunTime:0.0022s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and a.attr_type='唯一'' at line 2
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id= and a.attr_type='唯一'
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and a.attr_type='唯一'' at line 2
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id= and a.attr_type='唯一'
+
+[ 2017-04-05T18:37:41+08:00 ] 127.0.0.1 /index.php/Home/User/user_active/id/1/token/b0ec7b8482a21231355e4f062304b37f
+ERR: 1146:Table 'jxshop.jxshop_jxshop_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jxshop_jxshop_user`
+
+[ 2017-04-05T19:11:15+08:00 ] 127.0.0.1 /index.php/Home/Shop/add_cart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-05T19:12:45+08:00 ] 127.0.0.1 /index.php/Home/Shop/add_cart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+
+[ 2017-04-05T19:12:54+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/shopshow.php
+ERR: 1054:Unknown column 'shopshow.php' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=shopshow.php and a.attr_type='唯一'
+
+[ 2017-04-05T19:14:02+08:00 ] 127.0.0.1 /index.php/Home/Shop/add_cart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2017-04-05T19:14:29+08:00 ] 127.0.0.1 /index.php/Home/Shop/add_cart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2017-04-05T19:15:16+08:00 ] 127.0.0.1 /index.php/Home/Shop/add_cart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2017-04-05T19:18:12+08:00 ] 127.0.0.1 /index.php/Home/Shop/add_cart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-05T19:18:23+08:00 ] 127.0.0.1 /index.php/Home/Shop/add_cart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-05T19:20:13+08:00 ] 127.0.0.1 /index.php/Home/Shop/add_cart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-05T19:20:43+08:00 ] 127.0.0.1 /index.php/Home/Shop/add_cart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-05T19:23:06+08:00 ] 127.0.0.1 /index.php/Home/Shop/add_cart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-05T19:23:23+08:00 ] 127.0.0.1 /index.php/Home/Shop/add_cart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-05T19:24:46+08:00 ] 127.0.0.1 /index.php/Home/Shop/add_cart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: goods_id E:\phpStorm\jxshop\Application\Home\Controller\ShopController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-04-05T19:29:15+08:00 ] 127.0.0.1 /index.php/Home/Shop/add_cart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: goods_id E:\phpStorm\jxshop\Application\Home\Controller\ShopController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2017-04-05T19:36:29+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/goods.css
+ERR: 1054:Unknown column 'goods.css' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=goods.css and a.attr_type='唯一'
+
+[ 2017-04-05T19:36:30+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/jqzoom.css
+ERR: 1054:Unknown column 'jqzoom.css' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=jqzoom.css and a.attr_type='唯一'
+
+[ 2017-04-05T19:36:31+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/goods.js
+ERR: 1054:Unknown column 'goods.js' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=goods.js and a.attr_type='唯一'
+
+[ 2017-04-05T19:36:32+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/common.css
+ERR: 1054:Unknown column 'common.css' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=common.css and a.attr_type='唯一'
+
+[ 2017-04-05T19:36:33+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/jqzoom-core.js
+ERR: 1054:Unknown column 'jqzoom' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=jqzoom-core.js and a.attr_type='唯一'
+
+[ 2017-04-05T19:37:05+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/goods.css
+ERR: 1054:Unknown column 'goods.css' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=goods.css and a.attr_type='唯一'
+
+[ 2017-04-05T19:37:06+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/common.css
+ERR: 1054:Unknown column 'common.css' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=common.css and a.attr_type='唯一'
+
+[ 2017-04-05T19:37:07+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/goods.js
+ERR: 1054:Unknown column 'goods.js' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=goods.js and a.attr_type='唯一'
+
+[ 2017-04-05T19:37:08+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/jqzoom-core.js
+ERR: 1054:Unknown column 'jqzoom' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=jqzoom-core.js and a.attr_type='唯一'
+
+[ 2017-04-05T19:37:09+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/jqzoom.css
+ERR: 1054:Unknown column 'jqzoom.css' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=jqzoom.css and a.attr_type='唯一'
+
+[ 2017-04-05T19:37:10+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/jqzoom-core.js
+ERR: 1054:Unknown column 'jqzoom' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=jqzoom-core.js and a.attr_type='唯一'
+
+[ 2017-04-05T19:40:51+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: goods_id E:\phpStorm\jxshop\Application\Home\Controller\ShopController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2017-04-05T19:51:05+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0272s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: goods_id E:\phpStorm\jxshop\Application\Home\Controller\ShopController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2017-04-05T19:52:25+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: goods_id E:\phpStorm\jxshop\Application\Home\Controller\ShopController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-04-05T19:53:34+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: goods_id E:\phpStorm\jxshop\Application\Home\Controller\ShopController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2017-04-05T19:57:15+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: goods_id E:\phpStorm\jxshop\Application\Home\Controller\ShopController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2017-04-05T19:57:39+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=23
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: goods_id E:\phpStorm\jxshop\Application\Home\Controller\ShopController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2017-04-05T20:08:49+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=23
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: goods_id E:\phpStorm\jxshop\Application\Home\Controller\ShopController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2017-04-05T20:11:30+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=23
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2017-04-05T20:11:42+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0431s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001352s ]
+
+[ 2017-04-05T20:11:48+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-04-05T20:22:22+08:00 ] 127.0.0.1 /index.php/Home/Shop/flow1.html
+ERR: 1054:Unknown column 'goods_id' in 'field list'
+ [ SQL语句 ] : SELECT `goods_id`,`sm_logo` FROM `jxshop_goods` WHERE `id` IN ('23','1','4') 
+
+[ 2017-04-05T20:28:20+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2017-04-05T20:39:30+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-04-05T20:39:44+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-04-05T21:26:44+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2017-04-05T21:26:47+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2017-04-05T21:26:52+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000311s ]
+
+[ 2017-04-05T21:26:53+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2017-04-05T21:27:01+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2017-04-05T21:27:02+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2017-04-05T21:27:05+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-04-05T21:27:06+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2017-04-05T21:27:06+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2017-04-05T21:30:32+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000363s ]
+
+[ 2017-04-05T21:30:36+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2017-04-05T21:31:18+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2017-04-05T21:31:20+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2017-04-05T21:31:49+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-04-05T21:32:05+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2017-04-05T21:33:21+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-04-05T21:33:27+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2017-04-05T21:33:30+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2017-04-05T21:33:39+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2017-04-05T21:33:58+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2017-04-05T21:33:59+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2017-04-05T21:34:09+08:00 ] 127.0.0.1 /index.php/Home/Shop/delGoods.html?goods_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-04-05T21:34:23+08:00 ] 127.0.0.1 /index.php/Home/Shop/delGoods.html?goods_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2017-04-05T23:16:52+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_attr` [ RunTime:0.0021s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and a.attr_type='唯一'' at line 2
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id= and a.attr_type='唯一'
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and a.attr_type='唯一'' at line 2
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id= and a.attr_type='唯一'
+
+[ 2017-04-05T23:17:02+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2017-04-05T23:17:15+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=23
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2017-04-05T23:17:26+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+

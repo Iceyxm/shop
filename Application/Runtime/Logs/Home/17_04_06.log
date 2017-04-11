@@ -1,0 +1,405 @@
+[ 2017-04-06T09:07:59+08:00 ] 127.0.0.1 /index.php/Home/Shop/showlist
+ERR: 非法操作:showlist
+
+[ 2017-04-06T09:08:13+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2017-04-06T09:08:23+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2017-04-06T09:08:32+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2017-04-06T11:50:13+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2017-04-06T11:50:21+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-04-06T11:50:26+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2017-04-06T11:50:32+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2017-04-06T18:55:08+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=23
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2017-04-06T18:55:12+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=23
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-04-06T18:55:21+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2017-04-06T18:55:23+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 3 LIMIT 1   [ RunTime:0.1280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2017-04-06T18:55:32+08:00 ] 127.0.0.1 /index.php/Home/Shop/flow2.html
+ERR: 1146:Table 'jxshop.user' doesn't exist
+ [ SQL语句 ] : SELECT u.user_id,c.* FROM jxshop_consignee c INNER JOIN User u on u.user_id = c.user_id  
+
+[ 2017-04-06T19:01:28+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=23
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2017-04-06T19:01:34+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-04-06T19:02:59+08:00 ] 127.0.0.1 /index.php/Home/User/flow2
+ERR: 非法操作:flow2
+
+[ 2017-04-06T21:14:39+08:00 ] 127.0.0.1 /index.php/Home/User/regist.html?tel=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 127 行.
+NOTIC: [8] Use of undefined constant sendCode - assumed 'sendCode' E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 127 行.
+NOTIC: [2] Division by zero E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-04-06T21:16:00+08:00 ] 127.0.0.1 /index.php/Home/User/regist.html?tel=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 127 行.
+NOTIC: [8] Use of undefined constant sendCode - assumed 'sendCode' E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 127 行.
+NOTIC: [2] Division by zero E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-04-06T21:17:08+08:00 ] 127.0.0.1 /index.php/Home/User/regist.html?tel=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 128 行.
+NOTIC: [8] Use of undefined constant sendCode - assumed 'sendCode' E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 128 行.
+NOTIC: [2] Division by zero E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2017-04-06T21:18:07+08:00 ] 127.0.0.1 /index.php/Home/User/regist.html?tel=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 128 行.
+NOTIC: [8] Use of undefined constant sendCode - assumed 'sendCode' E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 128 行.
+NOTIC: [2] Division by zero E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-04-06T21:18:34+08:00 ] 127.0.0.1 /index.php/Home/User/regist.html?tel=17682301080
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 128 行.
+NOTIC: [8] Use of undefined constant sendCode - assumed 'sendCode' E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 128 行.
+NOTIC: [2] Division by zero E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-04-06T21:19:25+08:00 ] 127.0.0.1 /index.php/Home/User/regist.html?tel=17682301080
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 127 行.
+NOTIC: [8] Use of undefined constant sendCode - assumed 'sendCode' E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 127 行.
+NOTIC: [2] Division by zero E:\phpStorm\jxshop\Application\Runtime\Cache\Home\1b73f92bc2903402e5e70f13fcfc0ea2.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2017-04-06T21:20:04+08:00 ] 127.0.0.1 /index.php/Home/User/sendCode.html?tel=17682301080
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+NOTIC: [2] include_once(./Application/Common/Plugin/sms/CCPRestSmsSDK.php): failed to open stream: No such file or directory E:\phpStorm\jxshop\Application\Common\Common\function.php 第 86 行.
+NOTIC: [2] include_once(): Failed opening './Application/Common/Plugin/sms/CCPRestSmsSDK.php' for inclusion (include_path='.;C:\php\pear') E:\phpStorm\jxshop\Application\Common\Common\function.php 第 86 行.
+
+[ 2017-04-06T21:21:04+08:00 ] 127.0.0.1 /index.php/Home/User/sendCode.html?tel=17682301080
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [2] include_once(./Application/Common/Plugin/sms/CCPRestSmsSDK.php): failed to open stream: No such file or directory E:\phpStorm\jxshop\Application\Common\Common\function.php 第 86 行.
+NOTIC: [2] include_once(): Failed opening './Application/Common/Plugin/sms/CCPRestSmsSDK.php' for inclusion (include_path='.;C:\php\pear') E:\phpStorm\jxshop\Application\Common\Common\function.php 第 86 行.
+
+[ 2017-04-06T21:21:19+08:00 ] 127.0.0.1 /index.php/Home/User/sendCode.html?tel=17682301080
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [2] include_once(./Application/Common/Plugin/sms/CCPRestSmsSDK.php): failed to open stream: No such file or directory E:\phpStorm\jxshop\Application\Common\Common\function.php 第 86 行.
+NOTIC: [2] include_once(): Failed opening './Application/Common/Plugin/sms/CCPRestSmsSDK.php' for inclusion (include_path='.;C:\php\pear') E:\phpStorm\jxshop\Application\Common\Common\function.php 第 86 行.
+
+[ 2017-04-06T21:21:39+08:00 ] 127.0.0.1 /index.php/Home/User/sendCode.html?tel=17682301080
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+NOTIC: [8] Undefined variable: result E:\phpStorm\jxshop\Application\Common\Common\function.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2017-04-06T21:26:28+08:00 ] 127.0.0.1 /index.php/Home/User/sendCode.html?tel=17682301080
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+NOTIC: [8] Undefined variable: result E:\phpStorm\jxshop\Application\Common\Common\function.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2017-04-06T21:29:28+08:00 ] 127.0.0.1 /index.php/Home/User/sendCode.html?tel=17682301080
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2017-04-06T21:47:48+08:00 ] 127.0.0.1 /index.php/Home/User/sendCode.html?tel=17682301080
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-04-06T21:54:54+08:00 ] 127.0.0.1 /index.php/Home/User/sendCode.html?tel=17682301080
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-04-06T22:02:16+08:00 ] 127.0.0.1 /index.php/Home/User/sendCode.html?tel=17682301080
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2017-04-06T22:06:15+08:00 ] 127.0.0.1 /index.php/Home/User/sendCode.html?tel=17682301080
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2017-04-06T22:13:00+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2017-04-06T22:13:09+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2017-04-06T22:13:11+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-04-06T22:13:12+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-04-06T22:13:13+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2017-04-06T22:13:23+08:00 ] 127.0.0.1 /index.php/Home/Shop/changeNumber.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-04-06T22:15:57+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=23
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+

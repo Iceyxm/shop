@@ -1,0 +1,326 @@
+<layout name="Public/layout" />
+<!-- BEGIN PAGE LEVEL STYLES -->
+<link rel="stylesheet" type="text/css" href="{:C('ADMIN_CSS_PATH')}select2_metro.css" />
+<link rel="stylesheet" type="text/css" href="{:C('ADMIN_CSS_PATH')}chosen.css" />
+<!-- END PAGE LEVEL STYLES -->
+<!--富文本编辑器所需文件,引入顺序不能改变-->
+<script type="text/javascript" src="{:C('ADMIN_PLUGIN_PATH')}/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="{:C('ADMIN_PLUGIN_PATH')}/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript" src="{:C('ADMIN_PLUGIN_PATH')}/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+				<!-- END PAGE HEADER-->
+				<!-- BEGIN PAGE CONTENT-->
+				<div class="row-fluid">
+					<div class="span12">
+						<!-- BEGIN VALIDATION STATES-->
+						<div class="portlet box green">
+							<div class="portlet-title">
+								<div class="caption"><i class="icon-reorder"></i>商品基本信息</div>
+								<div class="tools">
+									<a href="javascript:;" class="collapse"></a>
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+									<a href="javascript:;" class="reload"></a>
+									<a href="javascript:;" class="remove"></a>
+								</div>
+							</div>
+
+							<div class="portlet-body form">
+
+								<!-- BEGIN FORM-->
+								<form action="" method="post" id="form_sample_2" class="form-horizontal" enctype="multipart/form-data">
+									<div class="alert alert-error hide">
+										<button class="close" data-dismiss="alert"></button>
+										请填写完整信息！
+									</div>
+									<div class="alert alert-success hide">
+										<button class="close" data-dismiss="alert"></button>
+										填写成功！
+									</div>
+
+									<div class="control-group">
+										<label class="control-label">商品名称<span class="required">*</span></label>
+										<div class="controls">
+											<input type="text" name="goods_name" value="{$info.goods_name}" data-required="1" class="span6 m-wrap"/>
+										</div>
+									</div>
+
+									<div class="control-group">
+										<label class="control-label">商品价格<span class="required">*</span></label>
+										<div class="controls">
+											<input name="goods_price" value="{$info.goods_price}" type="text" class="span6 m-wrap"/>
+										</div>
+									</div>
+
+									<div class="control-group">
+										<label class="control-label">商品logo<span class="required">*</span></label>
+										<div class="controls">
+											<input type="button" value="选择图片" class="btn green" id="btn"/>  <span id="pictext">未选择文件</span>
+											<input name="goods_pic" id="pic" type="file" style="display: none" class="span6 m-wrap"/>
+											<img src="{$info.logo}" alt="暂无logo" id="logo" style="z-index:1;display:none;width: 100px"/>
+										</div>
+									</div>
+
+									<div class="control-group">
+										<label class="control-label">商品分类<span class="required">*</span></label>
+										<div class="controls">
+											<select class="span6 m-wrap" name="goods_cat">
+												<foreach name="cate" item="v">
+													<option value="{$v.id}" <php>if($info['goods_cate'] == $v['id']) echo 'selected'</php>>{$v.cat_name}</option>
+												</foreach>
+											</select>
+										</div>
+									</div>
+
+									<div class="control-group">
+										<label class="control-label">商品简介<span class="required"></span></label>
+										<div class="controls" style="width: 800px">
+											<textarea name="goods_desc" id="goods_desc" onmousedown="isFocus(event)" style="height: 400px;width: 800px">{$info.goods_desc}</textarea>
+										</div>
+									</div>
+
+									<div class="control-group">
+										<label class="control-label">商品相册<span class="required">*</span></label>
+										<div class="controls">
+											<input type="button" value="点击选择商品相册" class="btn green" id="picbtn"/>  <span id="picstext">按住ctrl可以选择多张图片</span>
+											<input name="goods_pics[]" id="pictures" type="file" style="display: none" class="span6 m-wrap" multiple/>
+											<foreach name="picinfo" item="v" key="k">
+												<img src="{$v.pic}" id="pic{$k}" style="width: 100px;margin-left: 3px" ondblclick="del_pic('{$v.pic}','{$k}')"/>
+											</foreach>
+										</div>
+									</div>
+
+									<div class="control-group">
+										<label class="control-label">商品类型<span class="required">*</span></label>
+										<div class="controls">
+											<select class="span6 m-wrap" name="type_id" id="goods_type">
+												<option value="0">--请选择--</option>
+												<foreach name="type" item="v">
+													<option value="{$v.id}" <if condition="$info['type_id'] == $v['id']">selected='selected'</if>>{$v.type_name}</option>
+												</foreach>
+											</select>
+										</div>
+									</div>
+
+									<div class="control-group" id="attr">
+										<foreach name="attrs" item="v" key="k">
+											<label class="control-label">{$v.attr_name}<span class="required">*</span></label>
+											<div class="controls">
+														<if condition="$v['attr_type'] == '唯一'">
+															<input name="attr[{$v.id}][]" value="<php>echo $goods_attr[$k]['attr_value'][0];</php>" type="text" class="span6 m-wrap"/>
+														</if>
+														<if condition="$v['attr_type'] == '可选'">
+															<foreach name="v.attr_option_value" item="val">
+																<label class="checkbox line">
+																	<input type="checkbox" <php>if(in_array($val,$goods_attr[$k]['attr_value']))echo 'checked=checked'</php> value="{$val}" name="attr[{$v.id}][]"/>{$val}
+																</label>
+															</foreach>
+														</if>
+												</php>
+												<hr>
+											</div>
+										</foreach>
+									</div>
+
+									<div class="form-actions">
+										<input type="hidden" name="id" id="goods_id" value="{$info.id}">
+										<button type="submit" class="btn green">修改</button>
+									</div>
+								</form>
+								<!-- END FORM-->
+							</div>
+						</div>
+						<!-- END VALIDATION STATES-->
+					</div>
+				</div>
+				<!-- END PAGE CONTENT-->
+			</div>
+			<!-- END PAGE CONTAINER-->
+		</div>
+		<!-- END PAGE -->
+	</div>
+	<!-- END CONTAINER -->
+	<!-- BEGIN FOOTER -->
+	<include file="Public/footer"/>
+
+	<!-- BEGIN PAGE LEVEL STYLES -->
+	<script src="{:C('ADMIN_JS_PATH')}app.js"></script>
+	<!--<script src="{:C('ADMIN_JS_PATH')}form-validation.js"></script>-->
+	<!-- END PAGE LEVEL STYLES -->
+	<script type="text/javascript">
+		var ue = UE.getEditor('goods_desc',{toolbar:[[
+			'fullscreen', 'source', '|', 'undo', 'redo', '|',
+			'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
+			'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
+			'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
+			'directionalityltr', 'directionalityrtl', 'indent', '|',
+			'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
+			'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
+			'simpleupload', 'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe', 'insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
+			'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage',
+		]]});
+		function isFocus(e){
+			alert(UE.getEditor('goods_desc').isFocus());
+			UE.dom.domUtils.preventDefault(e)
+		}
+		function setblur(e){
+			UE.getEditor('goods_desc').blur();
+			UE.dom.domUtils.preventDefault(e)
+		}
+
+        //双击商品图片删除
+        function del_pic(pic_path,key){
+            var goods_id = $('#goods_id').val();
+            //console.log(pic_path + ',' + goods_id);
+			//发送ajax请求删除商品图片
+			$.ajax({
+				url:'{:U(del_pics_ajax)}',
+				dataType:'json',
+				data:{'goods_id':goods_id,'pic_path':pic_path},
+				type:'post',
+				success:function (msg) {
+				    //如果删除数据库和硬盘上的图片成功，删除相对应的img的标签
+					if(msg.statu == 1){
+						$('#pic'+key).remove();
+					}
+                }
+			});
+        }
+	</script>
+	<script>
+
+		jQuery(document).ready(function() {
+
+		    $('#goods_type').change(
+            	function () {
+                    var type_id = $(this).val();
+                    var goods_id = $('#goods_id').val();
+                    $.ajax({
+                        url:"{:U('Admin/goods/goods_edit')}",
+                        data:{'type_id':type_id,'goods_id':goods_id,'action':'getType'},
+                        dataType:'json',
+                        type:'post',
+                        success:function (msg) {
+                            //console.log(msg);
+							//alert(msg[0].length);
+                            var str = '';
+                            for (var i = 0; i < msg[0].length; i++){
+                                if (msg[0][i].attr_type == '可选'){
+                                    str += "<label class='control-label'>"+msg[0][i].attr_name+"</label><div class='controls'>";
+                                    var option_val = msg[0][i].attr_option_value;
+                                    option_val = option_val.split(',');
+                                    console.log(msg[1][i].attr_value);
+                                    //console.log(option_val);
+
+                                    for (var j = 0;j < option_val.length;j ++){
+                                        if (jQuery.inArray(option_val[j],msg[1][i].attr_value) != -1){
+                                            console.log(option_val[j]);
+                                            console.log(msg[1][i].attr_value);
+                                           str += "<label class='checkbox line'><input type='checkbox' checked='checked' value='"+option_val[j]+"' name='attr["+ msg[0][i].id +"][]'/>"+ option_val[j] +"</label>";
+                                        }else{
+                                            str += "<label class='checkbox line'><input type='checkbox' value='"+option_val[j]+"' name='attr["+ msg[0][i].id +"][]'/>"+ option_val[j] +"</label>";
+										}
+									}
+                                    str += "<hr>";
+                                    str  += "</div>";
+                                }else{
+                                    str += "<label class='control-label'>"+msg[0][i].attr_name+"</label><div class='controls'>"
+                                    str += "<input type='text' value='"+msg[1][i].attr_value[0]+"' name='attr["+ msg[0][i].id +"][]' data-required='1' class='span6 m-wrap'/>";
+                                    str += "<hr></div>";
+                                }
+                            }
+                            //console.log(str);
+                            $('#attr').html(str);
+
+                        }
+                    });
+                }
+			);
+
+			// initiate layout and plugins
+
+			App.init();
+
+
+            $('#btn').hover(
+                function(){$('#logo').css('display','inline')},
+                function(){$('#logo').css('display','none')}
+			);
+
+			$('#btn').click(function(){$('#pic').click()});
+			$('#pic').change(function () {$('#pictext').html($(this).val())});
+
+			$('#picbtn').click(function(){$('#pictures').click()});
+			$('#pictures').change(function () {$('#picstext').html($(this).val())});
+
+			var form2 = $('#form_sample_2');
+			var error2 = $('.alert-error', form2);
+			var success2 = $('.alert-success', form2);
+
+			form2.validate({
+				errorElement: 'span', //default input error message container
+				errorClass: 'help-inline', // default input error message class
+				focusInvalid: false, // do not focus the last invalid input
+				ignore: "",
+				rules: {
+					goods_name: {
+						minlength: 2,//最小长度2个字符
+						required: true//必填
+					},
+					goods_price: {
+						required: true
+					},
+					goods_category: {
+						required: true
+					},
+
+				},
+
+
+
+				errorPlacement: function (error, element) { // render error placement for each input type
+					if (element.attr("name") == "education") { // for chosen elements, need to insert the error after the chosen container
+						error.insertAfter("#form_2_education_chzn");
+					} else if (element.attr("name") == "membership") { // for uniform radio buttons, insert the after the given container
+						error.addClass("no-left-padding").insertAfter("#form_2_membership_error");
+					} else if (element.attr("name") == "service") { // for uniform checkboxes, insert the after the given container
+						error.addClass("no-left-padding").insertAfter("#form_2_service_error");
+					} else {
+						error.insertAfter(element); // for other inputs, just perform default behavoir
+					}
+				},
+
+				invalidHandler: function (event, validator) { //display error alert on form submit
+					success2.hide();
+					error2.show();
+					App.scrollTo(error2, -200);
+				},
+
+				highlight: function (element) { // hightlight error inputs
+					$(element)
+							.closest('.help-inline').removeClass('ok'); // display OK icon
+					$(element)
+							.closest('.control-group').removeClass('success').addClass('error'); // set error class to the control group
+				},
+
+				unhighlight: function (element) { // revert the change dony by hightlight
+					$(element)
+							.closest('.control-group').removeClass('error'); // set error class to the control group
+				},
+
+				success: function (label) {
+						label
+								.addClass('valid').addClass('help-inline ok') // mark the current input as valid and display OK icon
+								.closest('.control-group').removeClass('error').addClass('success'); // set success class to the control group
+				},
+
+				submitHandler: function (form) {
+					//alert(123);
+					form.submit();
+				}
+			});
+		});
+	</script>
+	<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

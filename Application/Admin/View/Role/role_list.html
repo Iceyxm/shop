@@ -1,0 +1,153 @@
+<layout name="Pub/layout" />
+<link rel="stylesheet" type="text/css" href="{:C('ADMIN_CSS_PATH')}select2_metro.css" />
+<link rel="stylesheet" href="{:C('ADMIN_CSS_PATH')}DT_bootstrap.css" />
+
+				<!-- END PAGE HEADER-->
+
+				<!-- BEGIN PAGE CONTENT-->
+
+				<div class="row-fluid">
+
+					<div class="span12">
+
+						<!-- BEGIN EXAMPLE TABLE PORTLET-->
+
+						<div class="portlet box blue">
+
+							<div class="portlet-title">
+
+								<div class="caption"><i class="icon-edit"></i>Editable Table</div>
+
+								<div class="tools">
+
+									<a href="javascript:;" class="collapse"></a>
+
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+
+									<a href="javascript:;" class="reload"></a>
+
+									<a href="javascript:;" class="remove"></a>
+
+								</div>
+
+							</div>
+
+							<div class="portlet-body">
+
+								<div class="clearfix">
+
+									<div class="btn-group">
+										<a href="{:U('Admin/admin_add')}">
+											<button id="" class="btn green">角色添加<i class="icon-plus"></i></button>
+										</a>
+									</div>
+
+									<div class="btn-group pull-right">
+
+										<button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="icon-angle-down"></i>
+
+										</button>
+
+										<ul class="dropdown-menu pull-right">
+
+											<li><a href="#">Print</a></li>
+
+											<li><a href="#">Save as PDF</a></li>
+
+											<li><a href="#">Export to Excel</a></li>
+
+										</ul>
+
+									</div>
+
+								</div>
+
+								<table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+
+									<thead>
+
+										<tr>
+
+											<th>角色ID</th>
+											<th>角色名称</th>
+											<th>权限名称</th>
+											<th>Edit</th>
+											<th>Delete</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<foreach name="lst" item="v">
+											<tr class="">
+												<td>{$v.id}</td>
+												<td>{$v.role_name}</td>
+												<td>{$v.pri_name|default="以前添的，还没有权限"}</td>
+												<td><a class="" href="{:U('role_edit',array('id'=>$v['id']))}">Edit</a></td>
+												<td><a class="delete" href="javascript:;" ) data-id="{$v.id}">Delete</a></td>
+											</tr>
+										</foreach>
+									</tbody>
+
+								</table>
+
+							</div>
+
+						</div>
+
+						<!-- END EXAMPLE TABLE PORTLET-->
+
+					</div>
+
+				</div>
+
+				<!-- END PAGE CONTENT -->
+
+			</div>
+
+			<!-- END PAGE CONTAINER-->
+
+		</div>
+
+		<!-- END PAGE -->
+
+	</div>
+
+	<!-- END CONTAINER -->
+
+	<!-- BEGIN FOOTER -->
+
+	<include file="Pub/footer" />
+
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+
+	<script type="text/javascript" src="{:C('ADMIN_JS_PATH')}select2.min.js"></script>
+
+	<script type="text/javascript" src="{:C('ADMIN_JS_PATH')}jquery.dataTables.js"></script>
+
+	<script type="text/javascript" src="{:C('ADMIN_JS_PATH')}DT_bootstrap.js"></script>
+
+	<!-- END PAGE LEVEL PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL SCRIPTS -->
+
+	<script src="{:C('ADMIN_JS_PATH')}app.js"></script>
+
+	<script src="{:C('ADMIN_JS_PATH')}table-editable.js"></script>    
+
+	<script>
+		c_url = "{:U('Admin/admin_del','',false)}";
+		jQuery(document).ready(function() {       
+
+		   App.init();
+
+		   TableEditable.init();
+
+		});
+
+	</script>
+
+</body>
+
+<!-- END BODY -->
+
+</html>

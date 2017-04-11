@@ -1,0 +1,250 @@
+<layout name="Pub/layout"/>
+<!-- BEGIN PAGE LEVEL STYLES -->
+	<link rel="stylesheet" href="{:C('ADMIN_CSS_PATH')}DT_bootstrap.css" />
+	<link href="{:C('ADMIN_CSS_PATH')}jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+	<!-- END PAGE LEVEL STYLES -->
+	<link rel="shortcut icon" href="{:C('ADMIN_IMAGE_PATH')}favicon.ico" />
+	<script type="text/javascript" src="{:C('ADMIN_JS_PATH')}jquery-1.8.3.min.js"></script>
+
+
+			<!-- BEGIN PAGE CONTENT-->
+			<div class="row-fluid">
+				<div class="span6">
+					<!-- BEGIN BORDERED TABLE PORTLET-->
+					<div class="portlet box yellow">
+						<div class="portlet-title">
+							<div class="caption"><i class="icon-coffee"></i>订单基本信息</div>
+							<div class="tools">
+								<a href="javascript:;" class="collapse"></a>
+								<a href="#portlet-config" data-toggle="modal" class="config"></a>
+								<a href="javascript:;" class="reload"></a>
+								<a href="javascript:;" class="remove"></a>
+							</div>
+						</div>
+
+						<div class="portlet-body">
+							<table class="table table-bordered table-hover">
+								<thead>
+								<tr>
+									<th>用户名</th>
+									<td>{$orderinfo.user_name}</td>
+								</tr>
+								<tr>
+									<th>订单编号</th>
+									<td>{$orderinfo.order_number}</td>
+								</tr>
+								<tr>
+									<th>订单总金额</th>
+									<td>{$orderinfo.order_price}</td>
+								</tr>
+								<tr>
+									<th>支付方式</th>
+									<td>{$paymethods[$orderinfo['order_pay']]}</td>
+								</tr>
+								<tr>
+									<th>是否发货</th>
+									<td>{$orderinfo['is_send']=='是' ? "<span class='label label-success'>已发货</span>" : "<span class='label label-danger'>未发货</span>" }</td>
+								</tr>
+								<tr>
+									<th>是否付款</th>
+									<td>{$orderinfo['order_status']=='1' ? "<span class='label label-success'>已付款</span>" : "<span class='label label-danger'>未付款</span>" }</td>
+								</tr>
+								<tr>
+									<th>发票抬头</th>
+									<td>{$orderinfo['order_fapiao_title']=='0' ? "<span class='label label-success'>个人</span>" : "<span class='label label-info'>公司</span>" }</td>
+								</tr>
+								<tr>
+									<th>发票公司</th>
+									<td>{$orderinfo.order_fapiao_company}</td>
+								</tr>
+								<tr>
+									<th>发票内容</th>
+									<td>{$orderinfo.order_fapiao_content}</td>
+								</tr>
+								<tr>
+									<th>下单时间</th>
+									<td>{$orderinfo.add_time|date="Y-m-d H:i:s",###}</td>
+								</tr>
+								<tr>
+									<th>收货人名称</th>
+									<td>{$orderinfo.cgn_name}</td>
+								</tr>
+								<tr>
+									<th>收货人地址</th>
+									<td>{$orderinfo.cgn_address}</td>
+								</tr>
+								<tr>
+									<th>联系电话</th>
+									<td>{$orderinfo.cgn_tel}</td>
+								</tr>
+								<tr>
+									<th class="hidden-480">邮编</th>
+									<td class="hidden-480">{$orderinfo.cgn_code}</td>
+								</tr>
+								</thead>
+							</table>
+
+						</div>
+
+					</div>
+					<!-- END BORDERED TABLE PORTLET-->
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span6">
+					<!-- BEGIN CONDENSED TABLE PORTLET-->
+					<div class="portlet box green">
+						<div class="portlet-title">
+							<div class="caption"><i class="icon-comments"></i>订单关联商品信息</div>
+							<div class="tools">
+								<a href="javascript:;" class="collapse"></a>
+								<a href="#portlet-config" data-toggle="modal" class="config"></a>
+								<a href="javascript:;" class="reload"></a>
+								<a href="javascript:;" class="remove"></a>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<table class="table table-condensed table-hover">
+								<thead>
+								<tr>
+									<th>商品ID</th>
+									<th>商品名称</th>
+									<th>商品单价</th>
+									<th class="hidden-480">购买数量</th>
+									<th>小计价格</th>
+								</tr>
+								</thead>
+								<tbody>
+								<foreach name="goodsinfo" item="v">
+									<tr>
+										<td>{$v.goods_id}</td>
+										<td>{$v.goods_name}</td>
+										<td><span class="label label-info">￥{$v.goods_price}</span></td>
+										<td class="hidden-480">{$v.goods_number}</td>
+										<td><span class="label label-warning">￥{$v.goods_total_price}</span></td>
+									</tr>
+								</foreach>
+								</tbody>
+
+							</table>
+
+						</div>
+
+					</div>
+
+					<!-- END CONDENSED TABLE PORTLET-->
+
+				</div>
+			</div>
+			<!-- END PAGE CONTENT-->
+
+			<!--BEGIN MAP SHOW-->
+			<style type="text/css">
+				/*#container{*/
+					/*min-width:600px;*/
+					/*min-height:767px;*/
+				/*}*/
+			</style>
+			<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+			<script>
+                var geocoder,map,marker = null;
+                window.onload = function () {
+					var center = new qq.maps.LatLng(39.916527,116.397128);
+					map = new qq.maps.Map(document.getElementById('container'),{
+						center: center,
+						zoom: 13,
+						draggable: true,
+						scrollwheel: true,
+						disableDoubleClickZoom: true,
+						scaleControl:true,
+						zoomControl:true,
+						panControl:true,
+						mapTypeControl:true
+					});
+
+					//调用地址解析类
+					geocoder = new qq.maps.Geocoder({
+                        complete : function(result){
+                            map.setCenter(result.detail.location);
+                            var marker = new qq.maps.Marker({
+                                map:map,
+                                position: result.detail.location
+                            });
+
+                            var infoWin = new qq.maps.InfoWindow({
+                                map: map
+                            });
+                            infoWin.open();
+                            //tips  自定义内容
+                            infoWin.setContent('<div style="width:200px;padding:2px;">'+
+                                '<p>地址： </p>'+
+                                '<p>{$orderinfo.cgn_address}</p></div>');
+                            infoWin.setPosition(marker);
+                        }
+					});
+
+                    var address = "{$orderinfo.cgn_address}";
+                    //通过getLocation();方法获取位置信息值
+                    geocoder.getLocation(address);
+                    //添加定时器
+                    setTimeout(function(){
+                        var marker=new qq.maps.Marker({
+                            position:center,
+                            animation:qq.maps.MarkerAnimation.DROP,
+                            map:map
+                        });
+                        //marker.setAnimation(qq.maps.Animation.DROP);
+                    },5000);
+                }
+
+
+			</script>
+			<div class="row-fluid">
+				<div class="span6">
+					<!-- BEGIN USA PORTLET-->
+					<div class="portlet box blue">
+						<div class="portlet-title">
+							<div class="caption"><i class="icon-reorder"></i>{$orderinfo.cgn_address}</div>
+							<div class="tools">
+								<a href="javascript:;" class="collapse"></a>
+								<a href="#portlet-config" data-toggle="modal" class="config"></a>
+								<a href="javascript:;" class="reload"></a>
+								<a href="javascript:;" class="remove"></a>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<input type="hidden" name="address" id="address"/>
+							<div id="container" class="vmaps "></div>
+						</div>
+					</div>
+					<!-- END USA PORTLET-->
+				</div>
+			</div>
+			<!--END MAP SHOW-->
+		</div>
+	</div>
+	<!-- END CONTAINER -->
+
+	<!-- BEGIN FOOTER -->
+	<include file="Pub/footer"/>
+	<!-- END CORE PLUGINS -->
+
+	<script src="{:C('ADMIN_JS_PATH')}app.js"></script>
+	<script src="{:C('ADMIN_JS_PATH')}maps-vector.js"></script>
+
+	<script>
+		jQuery(document).ready(function() {       
+
+		   // initiate layout and plugins
+
+		   App.init();
+
+		});
+
+	</script>
+
+</body>
+
+<!-- END BODY -->
+
+</html>

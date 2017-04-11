@@ -1,0 +1,244 @@
+<layout name="Pub/layout" />
+<link rel="stylesheet" type="text/css" href="{:C('ADMIN_CSS_PATH')}select2_metro.css" />
+<link rel="stylesheet" type="text/css" href="{:C('ADMIN_CSS_PATH')}chosen.css" />
+				<div class="row-fluid">
+
+					<div class="span12">
+
+						<!-- BEGIN VALIDATION STATES-->
+
+						<div class="portlet box green">
+
+							<div class="portlet-title">
+
+								<div class="caption"><i class="icon-reorder"></i>{$titles.sub}</div>
+
+								<div class="tools">
+
+									<a href="javascript:;" class="collapse"></a>
+
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+
+									<a href="javascript:;" class="reload"></a>
+
+									<a href="javascript:;" class="remove"></a>
+
+								</div>
+
+							</div>
+
+							<div class="portlet-body form">
+
+								<!-- BEGIN FORM-->
+
+								<form action="" id="form_sample_2" class="form-horizontal" method="post" enctype="multipart/form-data">
+
+									<div class="alert alert-error hide">
+
+										<button class="close" data-dismiss="alert"></button>
+
+										您的表单尚有未填项，或者非法数据，请仔细检查后再进行提交！
+
+									</div>
+
+									<div class="alert alert-success hide">
+
+										<button class="close" data-dismiss="alert"></button>
+
+										表单验证成功！
+
+									</div>
+									
+									<div class="control-group">
+										<label class="control-label">属性名称<span class="required">*</span></label>
+										<div class="controls">
+											<input type="text" name="attr_name" data-required="1" class="span6 m-wrap" value="{$info.attr_name}"/>
+											<input type="hidden" name="type_id" value="{$info.type_id}" />
+											<input type="hidden" name="id" value="{$info.id}" />
+										</div>
+									</div>
+									
+									<div class="control-group">
+										<label class="control-label">属性类型<span class="required">*</span></label>
+										<div class="controls">
+											<select class="span6 m-wrap" name="attr_type" id="attr_type">
+												<option value="">请选择类型</option>
+												<option value="可选" <if condition="'可选' == $info['attr_type']">selected="selected"</if>>可选</option>
+												<option value="唯一" <if condition="'唯一' == $info['attr_type']">selected="selected"</if>>唯一</option>
+											</select>
+										</div>
+									</div>	
+									<div class="control-group">
+										<label class="control-label">可选属性值<span class="required">*</span></label>
+										<div class="controls">
+											<textarea name="attr_option_value" id="a_o_v" <if condition="'唯一' == $info['attr_type']">disabled="disabled"</if>>{$info.attr_option_value|default=""}</textarea>
+										</div>
+									</div>
+									
+									<div class="form-actions">
+										<button type="submit" class="btn green">修改</button>
+									</div>
+
+								</form>
+
+								<!-- END FORM-->
+
+							</div>
+
+						</div>
+
+						<!-- END VALIDATION STATES-->
+
+					</div>
+
+				</div>
+
+				<!-- END PAGE CONTENT-->         
+
+			</div>
+
+			<!-- END PAGE CONTAINER-->
+
+		</div>
+
+		<!-- END PAGE -->  
+
+	</div>
+
+	<!-- END CONTAINER -->
+
+	<!-- BEGIN FOOTER -->
+
+	<include file="Pub/footer" />
+
+	<!-- BEGIN PAGE LEVEL STYLES -->
+
+	<script src="{:C('ADMIN_JS_PATH')}app.js"></script>
+
+
+	<!-- END PAGE LEVEL STYLES -->    
+
+	<script>
+	
+
+		jQuery(document).ready(function() {
+			//监听下拉框，如果发生改变，则进入此方法
+			$("#attr_type").change(function(){
+				var attr_val = $(this).val();//获取下拉框改变后的的value值
+				////如果选择的值是唯一，则把下面的文本框 禁用
+				if(attr_val == "唯一"){
+					$("#a_o_v").val("");//在选择唯一的时候，清除文本框的内容
+					$("#a_o_v").attr("disabled","disabled");
+				}else{
+					//如果选择的是：可选，则去掉禁用的属性
+					$("#a_o_v").removeAttr("disabled");
+				}
+			})
+
+		   App.init();
+
+           $('#form_2_select2').select2({
+               placeholder: "Select an Option",
+               allowClear: true
+           });
+
+           var form2 = $('#form_sample_2');
+           var error2 = $('.alert-error', form2);
+           var success2 = $('.alert-success', form2);
+
+           form2.validate({
+               errorElement: 'span', //default input error message container
+               errorClass: 'help-inline', // default input error message class
+               focusInvalid: false, // do not focus the last invalid input
+               ignore: "",
+               rules: {
+                   type_name: {
+                       minlength: 2,//最小长度2个字符
+                       required: true//必填
+                   },
+                   
+                   
+               },
+
+               messages: { // custom messages for radio buttons and checkboxes
+                   membership: {
+                       required: "Please select a Membership type"
+                   },
+                   service: {
+                       required: "Please select  at least 2 types of Service",
+                       minlength: jQuery.format("Please select  at least {0} types of Service")
+                   }
+               },
+
+               errorPlacement: function (error, element) { // render error placement for each input type
+                   if (element.attr("name") == "education") { // for chosen elements, need to insert the error after the chosen container
+                       error.insertAfter("#form_2_education_chzn");
+                   } else if (element.attr("name") == "membership") { // for uniform radio buttons, insert the after the given container
+                       error.addClass("no-left-padding").insertAfter("#form_2_membership_error");
+                   } else if (element.attr("name") == "service") { // for uniform checkboxes, insert the after the given container
+                       error.addClass("no-left-padding").insertAfter("#form_2_service_error");
+                   } else {
+                       error.insertAfter(element); // for other inputs, just perform default behavoir
+                   }
+               },
+
+               invalidHandler: function (event, validator) { //display error alert on form submit   
+                   success2.hide();
+                   error2.show();
+                   App.scrollTo(error2, -200);
+               },
+
+               highlight: function (element) { // hightlight error inputs
+                   $(element)
+                       .closest('.help-inline').removeClass('ok'); // display OK icon
+                   $(element)
+                       .closest('.control-group').removeClass('success').addClass('error'); // set error class to the control group
+               },
+
+               unhighlight: function (element) { // revert the change dony by hightlight
+                   $(element)
+                       .closest('.control-group').removeClass('error'); // set error class to the control group
+               },
+
+               success: function (label) {
+                   if (label.attr("for") == "service" || label.attr("for") == "membership") { // for checkboxes and radip buttons, no need to show OK icon
+                       label
+                           .closest('.control-group').removeClass('error').addClass('success');
+                       label.remove(); // remove error label here
+                   } else { // display success icon for other inputs
+                       label
+                           .addClass('valid').addClass('help-inline ok') // mark the current input as valid and display OK icon
+                       .closest('.control-group').removeClass('error').addClass('success'); // set success class to the control group
+                   }
+               },
+
+               submitHandler: function (form) {
+            	   form.submit();
+            	   //alert('123');
+                   //success2.show();
+                   //error2.hide();
+               }
+
+           });
+
+           //apply validation on chosen dropdown value change, this only needed for chosen dropdown integration.
+           $('.chosen, .chosen-with-diselect', form2).change(function () {
+               form2.validate().element($(this)); //revalidate the chosen dropdown value and show error or success message for the input
+           });
+
+            //apply validation on select2 dropdown value change, this only needed for chosen dropdown integration.
+           $('.select2', form2).change(function () {
+               form2.validate().element($(this)); //revalidate the chosen dropdown value and show error or success message for the input
+           });
+
+		});
+
+	</script>
+
+	<!-- END JAVASCRIPTS -->   
+
+</body>
+
+<!-- END BODY -->
+
+</html>

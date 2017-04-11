@@ -1,0 +1,96 @@
+[ 2017-04-08T17:20:17+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=12&goods_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0412s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=1) as attr_value FROM jxshop_attribute a WHERE `type_id` = 12  [ RunTime:0.0511s ]
+
+[ 2017-04-08T17:20:29+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=11&goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0021s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=4) as attr_value FROM jxshop_attribute a WHERE `type_id` = 11  [ RunTime:0.0013s ]
+
+[ 2017-04-08T17:20:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=12&goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0026s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=4) as attr_value FROM jxshop_attribute a WHERE `type_id` = 12  [ RunTime:0.0005s ]
+
+[ 2017-04-08T17:21:39+08:00 ] 127.0.0.1 /index.php/Admin/Order/order_add.html
+ERR: 非法操作:order_add
+
+[ 2017-04-08T17:22:00+08:00 ] 127.0.0.1 /index.php/Admin/Order/order_add.html
+ERR: 非法操作:order_add
+
+[ 2017-04-08T21:50:23+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=11&goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0810s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=4) as attr_value FROM jxshop_attribute a WHERE `type_id` = 11  [ RunTime:0.0988s ]
+
+[ 2017-04-08T21:50:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=12&goods_id=23
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0024s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=23) as attr_value FROM jxshop_attribute a WHERE `type_id` = 12  [ RunTime:0.0004s ]
+
+[ 2017-04-08T21:50:39+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=12&goods_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0028s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=3) as attr_value FROM jxshop_attribute a WHERE `type_id` = 12  [ RunTime:0.0008s ]
+
+[ 2017-04-08T21:51:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=12&goods_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0020s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=3) as attr_value FROM jxshop_attribute a WHERE `type_id` = 12  [ RunTime:0.0429s ]
+
+[ 2017-04-08T21:55:12+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=12&goods_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0021s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=3) as attr_value FROM jxshop_attribute a WHERE `type_id` = 12  [ RunTime:0.0004s ]
+
+[ 2017-04-08T21:55:53+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=12&goods_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0038s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=3) as attr_value FROM jxshop_attribute a WHERE `type_id` = 12  [ RunTime:0.0009s ]
+
+[ 2017-04-08T21:56:03+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=11&goods_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0021s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=3) as attr_value FROM jxshop_attribute a WHERE `type_id` = 11  [ RunTime:0.0003s ]
+

@@ -1,0 +1,272 @@
+[ 2017-04-09T08:40:12+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type.html?type_id=11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0387s ]
+SQL: SELECT * FROM `jxshop_attribute` WHERE `type_id` = 11  [ RunTime:0.0004s ]
+
+[ 2017-04-09T08:41:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type.html?type_id=11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_attribute` WHERE `type_id` = 11  [ RunTime:0.0003s ]
+
+[ 2017-04-09T08:41:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type.html?type_id=12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `jxshop_attribute` WHERE `type_id` = 12  [ RunTime:0.0003s ]
+
+[ 2017-04-09T08:41:33+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type.html?type_id=11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `jxshop_attribute` WHERE `type_id` = 11  [ RunTime:0.0003s ]
+
+[ 2017-04-09T08:44:48+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=11&goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0032s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=4) as attr_value FROM jxshop_attribute a WHERE `type_id` = 11  [ RunTime:0.0760s ]
+
+[ 2017-04-09T09:04:57+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type.html?type_id=12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `jxshop_attribute` WHERE `type_id` = 12  [ RunTime:0.0004s ]
+
+[ 2017-04-09T09:38:32+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_del/id/27
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) E:\phpStorm\jxshop\Application\Admin\Model\GoodsModel.class.php 第 228 行.
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0021s ]
+SQL: SELECT `logo`,`sm_logo`,`mid_logo` FROM `jxshop_goods` WHERE `id` = 27 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] unlink(.): Permission denied E:\phpStorm\jxshop\Application\Admin\Model\GoodsModel.class.php 第 119 行.
+NOTIC: [2] unlink(.): Permission denied E:\phpStorm\jxshop\Application\Admin\Model\GoodsModel.class.php 第 119 行.
+NOTIC: [2] unlink(.): Permission denied E:\phpStorm\jxshop\Application\Admin\Model\GoodsModel.class.php 第 119 行.
+SQL: SHOW COLUMNS FROM `jxshop_goods_pic` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `jxshop_goods_pic` WHERE `goods_id` = 27  [ RunTime:0.0003s ]
+SQL: DELETE FROM `jxshop_goods_pic` WHERE `goods_id` = 27 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_attr` [ RunTime:0.0023s ]
+SQL: DELETE FROM `jxshop_goods_attr` WHERE `goods_id` = 27 [ RunTime:0.0703s ]
+SQL: DELETE FROM `jxshop_goods` WHERE `id` = 27 [ RunTime:0.0325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2017-04-09T15:40:41+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type.html?type_id=12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001770s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_attribute` WHERE `type_id` = 12  [ RunTime:0.0428s ]
+
+[ 2017-04-09T15:41:17+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=12&goods_id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0028s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=28) as attr_value FROM jxshop_attribute a WHERE `type_id` = 12  [ RunTime:0.0004s ]
+
+[ 2017-04-09T15:47:59+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=11&goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0024s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=4) as attr_value FROM jxshop_attribute a WHERE `type_id` = 11  [ RunTime:0.0004s ]
+
+[ 2017-04-09T15:48:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_ajax_del_pic.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_pic` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-01/58df8b6323f13.jpg' LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-01/58df8b6323f13.jpg' [ RunTime:0.0464s ]
+
+[ 2017-04-09T15:53:02+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=11&goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0024s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=4) as attr_value FROM jxshop_attribute a WHERE `type_id` = 11  [ RunTime:0.0004s ]
+
+[ 2017-04-09T15:53:11+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_ajax_del_pic.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_pic` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-01/58df8b63256df.jpg' LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-01/58df8b63256df.jpg' [ RunTime:0.0002s ]
+
+[ 2017-04-09T15:53:14+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_ajax_del_pic.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_pic` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e75419e4d.jpg' LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e75419e4d.jpg' [ RunTime:0.0003s ]
+
+[ 2017-04-09T15:53:17+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_ajax_del_pic.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_pic` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-01/58df8b632d1a4.jpg' LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-01/58df8b632d1a4.jpg' [ RunTime:0.0002s ]
+
+[ 2017-04-09T15:53:19+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_ajax_del_pic.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0221s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_pic` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-01/58df8b632e02b.jpg' LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-01/58df8b632e02b.jpg' [ RunTime:0.0002s ]
+
+[ 2017-04-09T15:53:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_ajax_del_pic.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_pic` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e7541ac69.jpg' LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e7541ac69.jpg' [ RunTime:0.0002s ]
+
+[ 2017-04-09T15:53:25+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_ajax_del_pic.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0527s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_pic` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e7541b607.jpg' LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e7541b607.jpg' [ RunTime:0.0003s ]
+
+[ 2017-04-09T15:53:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_ajax_del_pic.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001987s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_pic` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e75423bee.jpg' LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e75423bee.jpg' [ RunTime:0.0002s ]
+
+[ 2017-04-09T15:53:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_ajax_del_pic.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_pic` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e7542487b.jpg' LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e7542487b.jpg' [ RunTime:0.0002s ]
+
+[ 2017-04-09T15:53:35+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_ajax_del_pic.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0395s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_pic` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e75425715.jpg' LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e75425715.jpg' [ RunTime:0.0003s ]
+
+[ 2017-04-09T15:53:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_ajax_del_pic.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_pic` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e75426579.jpg' LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e75426579.jpg' [ RunTime:0.0002s ]
+
+[ 2017-04-09T15:53:40+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_ajax_del_pic.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_pic` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e75427081.jpg' LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e75427081.jpg' [ RunTime:0.0003s ]
+
+[ 2017-04-09T15:53:42+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_ajax_del_pic.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods_pic` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e75427924.jpg' LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `jxshop_goods_pic` WHERE `goods_id` = 4 AND `pic` = '/Public/Uploads/Admin/Goods/Goods_pic/2017-04-09/58e9e75427924.jpg' [ RunTime:0.0002s ]
+
+[ 2017-04-09T16:35:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/get_attr_by_type_edit.html?type_id=12&goods_id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `jxshop_admin` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `jxshop_admin` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jxshop_attribute` [ RunTime:0.0040s ]
+SQL: SELECT a.*,(select ga.attr_value  from jxshop_goods_attr ga where ga.attr_id = a.id and ga.goods_id=28) as attr_value FROM jxshop_attribute a WHERE `type_id` = 12  [ RunTime:0.0006s ]
+
+[ 2017-04-09T21:19:11+08:00 ] 127.0.0.1 /Admin/API/getGoodsByCatAPI/catName/%E9%AD%85
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== c.id' at line 1
+ [ SQL语句 ] : select g.*,c.cat_name from jxshop_goods g JOIN jxshop_category c ON g.cat_id == c.id
+
+[ 2017-04-09T21:20:55+08:00 ] 127.0.0.1 /Admin/API/getGoodsByCatAPI/catName/%E9%AD%85
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Array'' at line 1
+ [ SQL语句 ] : select g.*,c.cat_name from jxshop_goods g JOIN jxshop_category c ON g.cat_id = c.id WHERE g.cat_id in 'Array'
+
+[ 2017-04-09T21:24:12+08:00 ] 127.0.0.1 /Admin/API/getGoodsByCatAPI/catName/%E9%AD%85
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array' at line 1
+ [ SQL语句 ] : select g.*,c.cat_name from jxshop_goods g JOIN jxshop_category c ON g.cat_id = c.id WHERE g.cat_id in Array
+
+[ 2017-04-09T21:24:33+08:00 ] 127.0.0.1 /Admin/API/getGoodsByCatAPI/catName/%E9%AD%85
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : select g.*,c.cat_name from jxshop_goods g JOIN jxshop_category c ON g.cat_id = c.id WHERE g.cat_id in (Array)
+
+[ 2017-04-09T21:26:28+08:00 ] 127.0.0.1 /Admin/API/getGoodsByCatAPI/catName/%E9%AD%85
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''4,19,20'' at line 1
+ [ SQL语句 ] : select g.*,c.cat_name from jxshop_goods g JOIN jxshop_category c ON g.cat_id = c.id WHERE g.cat_id in '4,19,20' 
+

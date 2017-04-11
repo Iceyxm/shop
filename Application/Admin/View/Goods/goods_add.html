@@ -1,0 +1,322 @@
+<layout name="Pub/layout" />
+<link rel="stylesheet" type="text/css" href="{:C('ADMIN_CSS_PATH')}select2_metro.css" />
+<link rel="stylesheet" type="text/css" href="{:C('ADMIN_CSS_PATH')}chosen.css" />
+
+<!--富文本编辑器需要的文件-->
+<script type="text/javascript" charset="utf-8" src="{:C('ADMIN_PLUGINS_PATH')}/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="{:C('ADMIN_PLUGINS_PATH')}/ueditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="{:C('ADMIN_PLUGINS_PATH')}/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+<!-- END PAGE HEADER-->
+
+<!-- BEGIN PAGE CONTENT-->
+
+
+<div class="row-fluid">
+
+	<div class="span12">
+
+		<!-- BEGIN VALIDATION STATES-->
+
+		<div class="portlet box green">
+
+			<div class="portlet-title">
+
+				<div class="caption"><i class="icon-reorder"></i>商品添加</div>
+
+				<div class="tools">
+
+					<a href="javascript:;" class="collapse"></a>
+
+					<a href="#portlet-config" data-toggle="modal" class="config"></a>
+
+					<a href="javascript:;" class="reload"></a>
+
+					<a href="javascript:;" class="remove"></a>
+
+				</div>
+
+			</div>
+
+			<div class="portlet-body form">
+
+				<!-- BEGIN FORM-->
+
+				<form action="" id="form_sample_2" class="form-horizontal" method="post" enctype="multipart/form-data">
+
+					<div class="alert alert-error hide">
+
+						<button class="close" data-dismiss="alert"></button>
+
+						您的表单尚有未填项，或者非法数据，请仔细检查后再进行提交！
+
+					</div>
+
+					<div class="alert alert-success hide">
+
+						<button class="close" data-dismiss="alert"></button>
+
+						表单验证成功！
+
+					</div>
+
+					<div class="control-group">
+						<label class="control-label">商品名称<span class="required">*</span></label>
+						<div class="controls">
+							<input type="text" name="goods_name" data-required="1" class="span6 m-wrap"/>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label">商品分类<span class="required">*</span></label>
+						<div class="controls">
+							<select class="span6 m-wrap" name="cat_id">
+								<option value="">请选择分类</option>
+								<foreach name="data" item="v">
+									<option value="{$v.id}">{:str_repeat("-",$v['level']*8)}{$v.cat_name}</option>
+								</foreach>
+							</select>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label">商品价格<span class="required">*</span></label>
+						<div class="controls">
+							<input type="text" name="goods_price" data-required="1" class="span6 m-wrap"/>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">商品图片<span class="required">*</span></label>
+						<div class="controls">
+							<button type="button" class="btn green" onclick="getUpload()">点击上传logo</button>
+							<span id="getText">尚未上传商品图片</span>
+							<input type="file" name="logo" style="display:none" id="logoFile"/>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label">商品简介<span class="required">*</span></label>
+						<div class="controls"  style="width:700px;">
+							<textarea name="goods_desc" id="goods_desc" style="height:200px;"></textarea>
+						</div>
+					</div>
+
+					<hr/>
+					<div class="control-group">
+						<label class="control-label">商品相册<span class="required">*</span></label>
+						<div class="controls">
+							<button type="button" class="btn green" onclick="getUploads()">点击上传相册图片</button>
+							<span id="getTexts">按住ctrl可以进行多张图片的选择</span>
+							<input type="file" name="goods_pics[]" style="display:none" id="logoFiles" multiple/>
+						</div>
+					</div>
+
+					<hr>
+					<h3>类型和属性管理</h3>
+
+					<div class="control-group">
+						<label class="control-label">商品类型<span class="required">*</span></label>
+						<div class="controls">
+							<select class="span6 m-wrap" name="type_id" id="goods_type">
+								<option value="">请选择类型</option>
+								<foreach name="type_data" item="v">
+									<option value="{$v.id}">{$v.type_name}</option>
+								</foreach>
+							</select>
+							<ul style="list-style:none;margin-left: 0;" id="type_ul"></ul>
+						</div>
+					</div>
+
+					<div class="form-actions">
+						<button type="submit" class="btn green">提交</button>
+					</div>
+				</form>
+				<!-- END FORM-->
+			</div>
+		</div>
+		<!-- END VALIDATION STATES-->
+	</div>
+</div>
+<!-- END PAGE CONTENT-->
+</div>
+<!-- END PAGE CONTAINER-->
+</div>
+<!-- END PAGE -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<include file="Pub/footer" />
+<!-- BEGIN PAGE LEVEL STYLES -->
+<script src="{:C('ADMIN_JS_PATH')}app.js"></script>
+<!-- END PAGE LEVEL STYLES -->
+<script type="text/javascript">
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('goods_desc',{
+        initialFrameWidth : 700,
+        initialFrameHeight: 200,//标签行内样式也可以设置宽高
+        autoHeightEnabled: false
+    });
+
+    function getUpload(){
+        $("#logoFile").click();
+    }
+
+    function getUploads(){
+        $("#logoFiles").click();
+    }
+
+    jQuery(document).ready(function() {
+        $("#logoFile").change(function(){
+            $("#getText").html($(this).val());
+        })
+
+        $("#logoFiles").change(function(){
+            $("#getTexts").html('图片已选择');
+        })
+
+        $('#goods_type').change(function () {
+            var t_id = $(this).val();
+            $.getJSON("{:U('Goods/get_attr_by_type')}",{"type_id":t_id},function(data){
+                var str = "";
+                str += "<span style='display:block;font-family: Microsoft YaHei UI Light;font-size: 20px;padding-top: 10px;'><b>请选择商品属性:</b></span>";
+                /**data数据,商品类型选择电脑时数据如下：*
+				 *
+                 0:
+                 {id: "15", attr_name: "CPU", attr_type: "可选", attr_option_value: "Intel,酷睿,龙腾,AIM,麒麟", type_id: "11"}
+                 1:
+                 {id: "16", attr_name: "内存", attr_type: "可选", attr_option_value: "2G,4G,8G,16G", type_id: "11"}
+                 2:
+                 {id: "17", attr_name: "硬盘", attr_type: "可选", attr_option_value: "128G,500G,526G,1T", type_id: "11"}
+				 * */
+				$.each(data,function(n,v){
+				    if(v.attr_type == "可选"){
+                        //JS方法split()：用逗号，把字符串拆分成数组
+                        var  attr_option_val = v.attr_option_value.split(',');//explode(",",v.attr_opito n_value)
+						str += "<hr>";
+                        str +="<li><span style='font-family: 华文行楷;font-weight: bolder;color: #ff0000;font-size: 18px;'>"+v.attr_name+":</span>";
+                        for(var i=0;i<attr_option_val.length;i++){
+                            str += "<label class='checkbox line' id='type_attr' style='margin-left: 50px;'>";
+                            str +="<input type='checkbox' value='"+attr_option_val[i]+"' name='attr_val["+v.id+"][]' />"+attr_option_val[i];
+                            str += "</label>";
+                        }
+                        str += "</li>";
+					}else{
+                        //attr_type=唯一，生成文本框
+                        str+="<br>"+v.attr_name+"：<input type='text' name='attr_val["+v.id+"][]' /><br>";
+                    }
+				})
+				$('#type_ul').html(str);
+            })
+        })
+        App.init();
+
+        $('#form_2_select2').select2({
+            placeholder: "Select an Option",
+            allowClear: true
+        });
+
+        var form2 = $('#form_sample_2');
+        var error2 = $('.alert-error', form2);
+        var success2 = $('.alert-success', form2);
+
+        form2.validate({
+            errorElement: 'span', //default input error message container
+            errorClass: 'help-inline', // default input error message class
+            focusInvalid: false, // do not focus the last invalid input
+            ignore: "",
+            rules: {
+                goods_name: {
+                    minlength: 2,//最小长度2个字符
+                    required: true//必填
+                },
+                goods_price: {
+                    required: true
+                },
+                cat_id: {
+                    required: true
+                },
+            },
+
+            messages: { // custom messages for radio buttons and checkboxes
+                membership: {
+                    required: "Please select a Membership type"
+                },
+                service: {
+                    required: "Please select  at least 2 types of Service",
+                    minlength: jQuery.format("Please select  at least {0} types of Service")
+                }
+            },
+
+            errorPlacement: function (error, element) { // render error placement for each input type
+                if (element.attr("name") == "education") { // for chosen elements, need to insert the error after the chosen container
+                    error.insertAfter("#form_2_education_chzn");
+                } else if (element.attr("name") == "membership") { // for uniform radio buttons, insert the after the given container
+                    error.addClass("no-left-padding").insertAfter("#form_2_membership_error");
+                } else if (element.attr("name") == "service") { // for uniform checkboxes, insert the after the given container
+                    error.addClass("no-left-padding").insertAfter("#form_2_service_error");
+                } else {
+                    error.insertAfter(element); // for other inputs, just perform default behavoir
+                }
+            },
+
+            invalidHandler: function (event, validator) { //display error alert on form submit
+                success2.hide();
+                error2.show();
+                App.scrollTo(error2, -200);
+            },
+
+            highlight: function (element) { // hightlight error inputs
+                $(element)
+                    .closest('.help-inline').removeClass('ok'); // display OK icon
+                $(element)
+                    .closest('.control-group').removeClass('success').addClass('error'); // set error class to the control group
+            },
+
+            unhighlight: function (element) { // revert the change dony by hightlight
+                $(element)
+                    .closest('.control-group').removeClass('error'); // set error class to the control group
+            },
+
+            success: function (label) {
+                if (label.attr("for") == "service" || label.attr("for") == "membership") { // for checkboxes and radip buttons, no need to show OK icon
+                    label
+                        .closest('.control-group').removeClass('error').addClass('success');
+                    label.remove(); // remove error label here
+                } else { // display success icon for other inputs
+                    label
+                        .addClass('valid').addClass('help-inline ok') // mark the current input as valid and display OK icon
+                        .closest('.control-group').removeClass('error').addClass('success'); // set success class to the control group
+                }
+            },
+
+            submitHandler: function (form) {
+                form.submit();
+                //alert('123');
+                //success2.show();
+                //error2.hide();
+            }
+
+        });
+
+        //apply validation on chosen dropdown value change, this only needed for chosen dropdown integration.
+        $('.chosen, .chosen-with-diselect', form2).change(function () {
+            form2.validate().element($(this)); //revalidate the chosen dropdown value and show error or success message for the input
+        });
+
+        //apply validation on select2 dropdown value change, this only needed for chosen dropdown integration.
+        $('.select2', form2).change(function () {
+            form2.validate().element($(this)); //revalidate the chosen dropdown value and show error or success message for the input
+        });
+
+    });
+
+</script>
+
+<!-- END JAVASCRIPTS -->
+
+</body>
+
+<!-- END BODY -->
+
+</html>

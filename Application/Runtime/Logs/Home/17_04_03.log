@@ -1,0 +1,19 @@
+[ 2017-04-03T08:31:55+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/25.html
+ERR: 1054:Unknown column 'a.attr_id' in 'field list'
+ [ SQL语句 ] : SELECT a.attr_id,a.attr_name,ga.attr_value FROM jxshop_goods_attr ga INNER JOIN jxshop_attribute a on ga.attr_id=a.id  WHERE ga.goods_id = '25' AND a.attr_type = '唯一' 
+
+[ 2017-04-03T13:41:54+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/login.html
+ERR: 1054:Unknown column 'login' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=login and a.attr_type='唯一'
+
+[ 2017-04-03T13:45:23+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/login.html
+ERR: 1054:Unknown column 'login' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=login and a.attr_type='唯一'
+
+[ 2017-04-03T13:47:21+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/goods_id/login.html
+ERR: 1054:Unknown column 'login' in 'where clause'
+ [ SQL语句 ] : select ga.attr_id,a.attr_name,ga.attr_value from jxshop.jxshop_goods_attr ga INNER JOIN jxshop.jxshop_attribute a
+                on a.id=ga.attr_id WHERE ga.goods_id=login and a.attr_type='唯一'
+

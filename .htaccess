@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks
+  RewriteEngine On
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  #这种配置不仅可满足下面那种配置PHP高版本隐藏入口文件的需求，也可以满足自己搭建环境时多个PHP版本(不像PHPstudy这种一键式安装集成环境)
+  RewriteRule ^(.*)$ index.php [L,E=PATH_INFO:$1]
+  #正常的默认配置index.php后面不带问号，加问号为了满足PHP高于5.3版本的隐藏入口文件
+  #RewriteRule ^(.*)$ index.php?/$1 [QSA,PT,L]
+</IfModule>

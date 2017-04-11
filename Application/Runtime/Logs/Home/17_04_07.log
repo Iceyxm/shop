@@ -1,0 +1,202 @@
+[ 2017-04-07T09:31:08+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2017-04-07T14:38:49+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-04-07T14:59:55+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T14:59:55+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T14:59:56+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:00:10+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2017-04-07T15:00:16+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002348s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:00:16+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:00:17+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:02:58+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2017-04-07T15:03:03+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:03:03+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:03:04+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:04:07+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:04:07+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:04:08+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:04:32+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:04:33+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:04:33+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:05:40+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001891s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:05:40+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001921s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:05:40+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:07:23+08:00 ] 127.0.0.1 /index.php/Home/Shop/Application/Home/View/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+ERR: 非法操作:Application
+
+[ 2017-04-07T15:07:23+08:00 ] 127.0.0.1 /index.php/Home/Shop/Application/Home/View/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001844s ]
+ERR: 非法操作:Application
+
+[ 2017-04-07T15:07:24+08:00 ] 127.0.0.1 /index.php/Home/Shop/Application/Home/View/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+ERR: 非法操作:Application
+
+[ 2017-04-07T15:07:50+08:00 ] 127.0.0.1 /index.php/Home/Application/Home/View/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+ERR: 无法加载控制器:Application
+
+[ 2017-04-07T15:07:50+08:00 ] 127.0.0.1 /index.php/Home/Application/Home/View/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+ERR: 无法加载控制器:Application
+
+[ 2017-04-07T15:07:51+08:00 ] 127.0.0.1 /index.php/Home/Application/Home/View/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+ERR: 无法加载控制器:Application
+
+[ 2017-04-07T15:08:20+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:08:20+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+ERR: 非法操作:ChinaArea.xml
+
+[ 2017-04-07T15:08:21+08:00 ] 127.0.0.1 /index.php/Home/Shop/ChinaArea.xml
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+ERR: 非法操作:ChinaArea.xml
+

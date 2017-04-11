@@ -1,0 +1,36 @@
+[ 2017-04-10T16:13:36+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-04-10T16:14:46+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2017-04-10T16:22:29+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart.html?goods_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `jxshop_goods` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `jxshop_goods` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-04-10T17:03:56+08:00 ] 127.0.0.1 /home/Shop/showlist
+ERR: 非法操作:showlist
+
+[ 2017-04-10T17:04:04+08:00 ] 127.0.0.1 /home/Shop/detail
+ERR: 非法操作:detail
+
